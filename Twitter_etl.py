@@ -3,12 +3,14 @@ import pandas as pd
 import json
 from datetime import datetime
 import s3fs
-from Airflow_project import Apikeys
+from dotenv import load_dotenv
+import os 
+load_dotenv()
 
-access_key = Twitter_API_Key
-access_secret = Twitter_API_secret_Key
-consumer_key = Access_Token 
-consumer_secret = Access_Token_secret
+access_key = os.getenv('Twitter_API_Key')
+access_secret = os.getenv('Twitter_API_secret_Key')
+consumer_key = os.getenv('Access_Token ')
+consumer_secret = os.getenv('Access_Token_secret')
 
 
 # authentication for access
