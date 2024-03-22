@@ -3,12 +3,12 @@ import pandas as pd
 import json
 from datetime import datetime
 import s3fs
+from Airflow_project import Apikeys
 
-
-access_key = "FIYWpeIWTHcSJoT7za0kZtNMi"
-access_secret = "bd3wP64Gi2vcfxF8UKZMlpNz4gPX9fR9KftgWZ3XZpEutEXUo1"
-consumer_key = "1771042776987189248-T6oIatx8rG97rTGtV2Pj5bJhPrQl9X"
-consumer_secret = "YtSVfpqk4iWO0vOeKW01RssNrVXMH6KvKLq0OgMNfHnGs"
+access_key = Twitter_API_Key
+access_secret = Twitter_API_secret_Key
+consumer_key = Access_Token 
+consumer_secret = Access_Token_secret
 
 
 # authentication for access
